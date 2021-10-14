@@ -1,0 +1,115 @@
+*{
+    margin: 0; /*cola o conteúdo no topo da página*/
+    padding: 0; /*cola o conteúdo no topo da página*/
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif; /*muda a fonte dentro do body*/
+    background-color: black; /*muda cor de fundo geral*/
+}
+
+.container{
+    max-width: 1000px; /*largura máxima do container*/
+    margin: auto; /*centraliza o cabeçalho*/
+}
+
+header{
+    background-color: #48c5ce; /*muda a cor de fundo do título principal para um azul claro*/
+    color: white;  /*muda a cor do texto do título principal para branco*/
+    text-align: center; /*alinha o título principal do header*/
+    padding: 10px; /*afasta header para uma melhor visualização*/
+}
+
+.title{
+    font-size: 25px; /*altera em específico o tamnho da fonte em title para 25px*/
+}
+
+section{
+    padding: 20px; /*afasta a section do canto*/
+    background-image: url('../images/people.jpg'); /*adiciona imagem na section*/
+    background-size: cover; /*faz a imagem cobrir a outra*/
+    overflow: hidden; /*faz a imgem prencher completamente podendo usar o float:right*/
+}
+
+.formContainer{
+    background-color: #FFFFFFBB; /*muda a cor de fundo do formulário*/
+    max-width: 230px; /*altera a largura máxima do formulário*/
+    padding: 20px; /* expande o corpo do formulário para fora*/
+    float: right; /*passa o formulário para a direita*/
+}
+
+h2{
+    font-size: 16px; /* muda o tamnho da fonte do h2*/
+}
+
+.mb{
+    margin-bottom: 15px; /*distancia para baixo o h2 e o p*/
+}
+
+input, select{
+    width: 100%; /*aumenta a largura dos inputs*/
+    box-sizing: border-box; /*alinha os inputs*/
+    padding: 10px; /* aumenta o tamanho do input*/
+    border: none; /*tira a borda dos inputs*/
+    margin-bottom: 10px; /*afasta os inputs, "descola um do outro"*/
+
+}
+
+input[type="submit"]{   /*aplicará só aos inputs que tem sentido submit*/
+    color: white; /*muda cor do texto do botão inscreva-se para branco*/
+    background-color: #48c5ce; /*muda cor de fundo do botão inscreva-se para um azul claro*/
+    font-weight: bold; /*engrossa a fonte do botão inscreva-se*/
+}
+
+select{
+     /*faz o select não ter a aparência padrão dos navegadores, podendo assim definir uma aparência personalizada*/
+    appearance: none;  
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    background-image: url('../images/arrow.jpg'); /*adiciona imagem ao botão input*/
+    background-repeat: no-repeat; /*faz a imagem adicionada não repetir*/
+    float: right;
+
+    background-position-x: calc(100% - 10px); /*afasta a seta no eixo x para direita*/ 
+    background-position-y: center; /*centraliza a seta no meio do input*/
+
+}
+
+footer{
+    background-color: #202121; /*muda a cor de fundo do footer*/
+    padding: 40px; /*afasta o footer(description e picture) um pouco para baixo*/
+    text-align: center; /*centraliza o footer pois tem inline-block*/
+
+}
+
+.picture{
+    width: 160px; /*altera o tamanho da imagem e automaticamente a proporção*/
+}
+
+.description{
+   display: inline-block; /*permite alterar largura e altura*/
+   color: white; /*muda cor da descrição para branco*/
+   max-width: 40%; /*tamanho máximo da largura da descrição*/
+   margin-left: 40px; /*distância a descrição para a direita em 40px*/
+   text-align: left; /*alinha a description à esquerda*/
+}
+
+.description p, .description h3{
+    margin-bottom: 20px; /*distância p e h3 em 20px*/
+}
+
+.description h3{
+    font-size: 24px; /*aumenta em específico o tamanho da fonte do h3*/ 
+}
+
+/*responsividade em 600px*/
+@media screen and (max-width: 600px) {
+
+    .formContainer{
+        max-width: 500px;
+        padding: 40px;
+        margin: 50px;
+    }
+    
+}
